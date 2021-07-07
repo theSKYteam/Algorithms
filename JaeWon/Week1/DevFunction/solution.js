@@ -1,4 +1,4 @@
-function solution (progresses, speeds) {
+module.exports = function (progresses, speeds) {
   const answer = [];
   const leftDays = progresses.map((progress, i) =>
     Math.ceil((100 - progress) / speeds[i])
@@ -16,6 +16,4 @@ function solution (progresses, speeds) {
   }
   answer.push(output);
   return answer;
-}
-
-module.exports = solution;
+};

@@ -7,7 +7,7 @@
     "test": "jest",
     "test:reone": "jest ./jaewon",
     "test:gahee": "jest ./gahee",
-    "test:seunyeon": "jest ./seungyeon",
+    "test:seungyeon": "jest ./seungyeon",
     "test:eonjo": "jest ./eonjo",
     "lint": "eslint ./src --fix"
   },
