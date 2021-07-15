@@ -14,7 +14,9 @@ describe('입국심사', () => {
     caseIdx = caseIdx > testCase.length ? 0 : caseIdx + 1;
   });
 
-  it(`입력값이 ${input} 일 때 기대값은 ${output} 이어야 합니다.`, () => {
-    expect(solution(...input)).toStrictEqual(output);
-  });
+  for (let i = 0; i < testCase.length; i++) {
+    it(`입력값이 ${input} 일 때 기대값은 ${output} 이어야 합니다.`, () => {
+      expect(solution(...input)).toStrictEqual(output);
+    });
+  }
 });
