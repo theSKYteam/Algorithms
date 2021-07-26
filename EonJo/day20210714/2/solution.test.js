@@ -1,6 +1,6 @@
 const solution = require('./solution.js');
 
-describe('ths is test template code', () => {
+describe('점프와 순간 이동 테스트', () => {
   it('입력값이 5 일 때 기대값은 2 이어야 합니다.', () => {
     expect(solution(5)).toStrictEqual(2);
   });

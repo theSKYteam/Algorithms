@@ -1,6 +1,6 @@
 const solution = require('./solution.js');
 
-describe('ths is test template code', () => {
+describe('구명보트 테스트', () => {
   it('입력값이 [70, 50, 80, 50], 100 일 때 기대값은 3 이어야 합니다.', () => {
     expect(solution([70, 50, 80, 50], 100)).toStrictEqual(3);
   });

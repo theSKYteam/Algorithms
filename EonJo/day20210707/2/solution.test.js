@@ -1,6 +1,6 @@
 const solution = require('./solution.js');
 
-describe('ths is test template code', () => {
+describe('가장 큰 수 테스트', () => {
   it('입력값이 [6, 10, 2] 일 때 기대값은 "6210" 이어야 합니다.', () => {
     expect(solution([6, 10, 2])).toStrictEqual('6210');
   });
