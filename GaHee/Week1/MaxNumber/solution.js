@@ -1,27 +1,8 @@
-module.exports = function solution(progresses, speeds) {
-  var answer = [];
-  // progresses가 100이 될 때까지 +speeds
-
-  while (progresses.length > 0) {
-      let count = 0;
-      
-      for (let i = 0; i < progresses.length; i++) {
-          if  (progresses[i] < 100) {
-              progresses[i] += speeds[i];
-          }
-      }
-      
-      while (progresses[0] >= 100) {
-          progresses.shift();
-          speeds.shift();
-          count++;
-      }
-         
-      if (count !== 0) {
-          answer.push(count);
-          count = 0;
-      }
+module.exports = function solution(numbers) {
+    const copyNum = numbers.map((num) => num.toString());
+    
+    const answer = copyNum.sort((a, b) => (b + a) - (a + b)).join('');
+    // 예외처리
+    if (answer[0] === '0') return '0';
+    return answer;
   }
-  
-  return answer;
-}
