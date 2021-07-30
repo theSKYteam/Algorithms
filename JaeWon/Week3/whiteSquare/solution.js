@@ -1,8 +1,10 @@
-module.exports = function solution (w, h) {
-  function gcd (a, b) { // 최대 공약수
+module.exports = function solution(w, h) {
+  function gcd(a, b) {
+    // 최대 공약수
     return a % b === 0 ? b : gcd(b, a % b);
   }
-  function getRatio (num1, num2) { // 비율 계산
+  function getRatio(num1, num2) {
+    // 비율 계산
     if (num1 < num2) {
       return num2 / num1;
     } else {
@@ -13,7 +15,8 @@ module.exports = function solution (w, h) {
   const ratio = getRatio(w, h); // 매칸 찍히는 점의 위치 비율
   let blank = 0; // 지워지는 블럭 갯수
   let start = 0; // 시작 지점
-  for (let i = 1; i <= Math.min(w, h) / gcdNumber; i++) { // 매 칸마다 지워지는 블럭 계산
+  for (let i = 1; i <= Math.min(w, h) / gcdNumber; i++) {
+    // 매 칸마다 지워지는 블럭 계산
     let end = Math.ceil(ratio * i);
     if (i === Math.min(w, h) / gcdNumber) {
       end = Math.max(w, h) / gcdNumber;
