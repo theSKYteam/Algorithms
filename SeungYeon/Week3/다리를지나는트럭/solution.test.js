@@ -10,7 +10,7 @@ let input, output;
 describe('다리를 지나는 트럭', () => {
   beforeEach(() => {
     input = testCase[caseIdx].params;
-    output = testCase[caseIdx].params;
+    output = testCase[caseIdx].return;
   });
 
   afterEach(() => {
@@ -21,5 +21,5 @@ describe('다리를 지나는 트럭', () => {
     it(`입력값이 ${input} 일 때 기대값은 ${output} 이어야 합니다.`, () => {
       expect(solution(...input)).toStrictEqual(output);
     });
-  };
+  }
 });
