@@ -29,3 +29,20 @@ module.exports = function solution(w, h) {
 
 // 다른 풀이
 /* 그래프 아래 위는 완벽히 대칭을 이용할 수 있다. */
+
+/*
+  그래프 위쪽의 사각형은 무조건 유효하다.
+  위 쪽의 사각형의 전체 모양은 아래쪽과 대칭이다. 
+  위쪽 전체를 2배하면 같은 결과가 나온다.
+
+  function solution () {
+    let blank = 0;
+    for (let i = 1; i <= w; i++) {
+      blank += Math.ceil((h / w) * i);
+    }
+    return (w * h - blank) * 2;
+  }
+
+
+  FIXME: 이후에 알았는데, 기울기를 세로 / 가로를 하는가 가로 / 세로를 하는가에 따라서 테스트 케이스를 통과하지 않는 경우도 있다.
+ */
