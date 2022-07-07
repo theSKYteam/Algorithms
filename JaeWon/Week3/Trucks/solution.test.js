@@ -5,7 +5,7 @@ describe('다리위를 지나는 트럭 테스트', () => {
 
   it('입력값이 2, 12, [7,4,5,6] 일 때 기대값은 8 이어야 합니다.', () => {
     bridgeLength = 2;
-    weight = 12;
+    weight = 10;
     truckWeights = [7, 4, 5, 6];
     answer = 8;
     expect(solution(bridgeLength, weight, truckWeights)).toStrictEqual(answer);
